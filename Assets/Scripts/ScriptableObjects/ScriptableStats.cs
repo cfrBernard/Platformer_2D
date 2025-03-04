@@ -39,13 +39,13 @@ namespace TarodevController
         public float JumpPower = 36;
 
         [Tooltip("The multiplier for fast fall speed when the player holds down the input")]
-        public float FastFallMultiplier = 2.0f;
+        public float FastFallMultiplier = 1.8f;
 
         [Tooltip("The maximum vertical movement speed")]
-        public float MaxFallSpeed = 40;
+        public float MaxFallSpeed = 35;
 
         [Tooltip("The player's capacity to gain fall speed. a.k.a. In Air Gravity")]
-        public float FallAcceleration = 110;
+        public float FallAcceleration = 100;
 
         [Tooltip("The gravity multiplier added when jump is released early")]
         public float JumpEndEarlyGravityModifier = 3;
