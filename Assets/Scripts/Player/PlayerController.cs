@@ -750,7 +750,7 @@ namespace TarodevController
                     StartCoroutine(MoveLantern(climbBegunPosition, climbOverPosition));
                 }
         
-                Invoke("ReactivatePhysics", 0.2f);
+                Invoke("ReactivatePhysics", 0.15f);
                 canClimb = true;
             }
         }
@@ -787,14 +787,14 @@ namespace TarodevController
             {
                 lantern.position = Vector2.Lerp(startPosition, endPosition, elapsedTime / lanternMoveDuration);
                 elapsedTime += Time.deltaTime;
-                yield return null; // Attend le frame suivant
+                yield return null;
             }
         
             // S'assure que la lanterne est exactement à la position finale
             lantern.position = endPosition;
         
             // Réinitialisation de la position de la lanterne après le mouvement
-            yield return new WaitForSeconds(0.2f); // Ajoute un léger délai si nécessaire
+            yield return new WaitForSeconds(0.2f); 
             if (lantern != null)
             {
                 lantern.localPosition = lanternOriginalOffset;
