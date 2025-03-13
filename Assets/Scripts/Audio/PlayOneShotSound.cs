@@ -10,7 +10,7 @@ public class PlayOneShotSound : StateMachineBehaviour
     public bool playOnEnter = true, playOnExit = false, playAfterDeley = false;
 
     // Delay sound timer
-    public float playDelay = 0.25f;
+    public float playDelay = 0.20f;
     private float timeSinceEntered = 0;
     private bool hasDelayedSoundPlayed = false;
 
