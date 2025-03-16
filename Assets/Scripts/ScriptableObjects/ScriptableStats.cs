@@ -56,8 +56,8 @@ namespace TarodevController
         [Tooltip("The amount of time we buffer a jump. This allows jump input before actually hitting the ground")]
         public float JumpBuffer = .2f;
         
-        [Tooltip("The amount of time we buffer a jump. This allows jump input before actually hitting the ground")]
-        public float WallJumpPushForce = 10f;
+        [Tooltip("WallJumpPushForce")]
+        public float WallJumpPushForce = 8f;
         
         [Header("DASH")]
         [Tooltip("The speed applied during a dash")]
